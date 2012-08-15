@@ -1,0 +1,742 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Shogun Legacy</title>
+
+        <link href="../_ui/css/styles.css" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.3.min.js"></script>
+        <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+
+        <script type="text/javascript">
+            // initialize tooltip
+            $("#nav ul li a[title]").tooltip({
+
+            // tweak the position
+            offset: [30, 95],
+
+            // use the "slide" effect
+            effect: 'slide'
+
+            // add dynamic plugin with optional configuration for bottom edge
+            }).dynamic({ bottom: { direction: 'down', bounce: true } });
+        </script>
+
+    </head>
+
+    <body id = "menu">
+        <div id = "wrapper">
+            <div id = "nav">
+                <a href = "/index.html"><h1 class = "hide-text">
+                Shogun Legacy
+                </h1></a>
+                <ul>
+                    <li><a href = "/about">About</a></li>
+                    <li id = "selected">Menu</li>
+                    <li><a href = "#" title="Coming Soon!">Gallery</a></li>
+                    <li><a href = "#" title="Coming Soon!">Private Room</a></li>
+                    <li><a href = "#" title="Coming Soon!">Patio</a></li>
+                    <li><a href = "/contact">Contact Us</a></li>
+                </ul>
+                <div id = "footer">
+                    <p id = "address">
+                    1536 North Bay Avenue<br />Toms River, NJ 08753<br />
+                    732-286-9888<br /><br />
+                    <a href = "mailto:info@shogunlegacy.com">info@shogunlegacy.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <div id = "content">
+
+                <div id = "menu-nav">
+                    <p id = "menu-title"><img src = "../_ui/images/common/title_menu.png" /></p>
+                    <ul>
+                        <li><a id="appetizers" href = "appetizers" class="highlighted">Appetizers</a></li>
+                        <li><a id = "entrees" href = "entrees">Entrees</a></li>
+                        <li><a id = "sushi" href = "sushi">Sushi</a></li>
+                        <li><a id = "dessert" href = "dessert">Dessert</a></li>
+                        <li><a id = "drinks" href = "drinks">Drinks</a></li>
+                    </ul>
+                </div>
+
+                <div id = "menu-content">
+
+                    <div class = "appetizers menu selected">
+
+                        <h2>SOUPS</h2>
+                        <div class = "row">
+                            <h3>WONTON SOUP</h3>
+                            <div class = "price">5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>HOT & SOUR SOUP</h3>
+                            <div class = "price">4</div>
+                            </div>
+                        <div class = "row">
+                            <h3>TOM YUM SOUP</h3>
+                            <em>(Thai hot & sour soup)</em>
+                            <div class = "price">5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>CHILEAN SEABASS SOUP</h3>
+                            <em>(made for two)</em>
+                            <div class = "price">15</div>
+                        </div>
+                        <div class = "row last">
+                            <h3>SEAFOOD WOR BA SOUP</h3>
+                            <em>(made for two)</em>
+                            <div class = "price">14</div>
+                        </div>
+
+                        <h2>SALADS</h2>
+                        <div class = "row">
+                            <h3>GARDEN SALAD</h3>
+                            <em>Homemade ginger dressing</em>
+                            <div class = "price">2.5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>HIYASHI WAKAME</h3>
+                            <em>Seaweed salad</em>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>THAI STYLE GRILLED BEEF SALAD</h3>
+                            <em>Slices of grilled marinated steak, finished with chili lemon dressing</em>
+                            <div class = "price">10</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SEARED TUNA SALAD</h3>
+                            <em>Seared peppered tuna, spring mix, yuzu vinaigrette (choice of super white or ahi tuna)</em>
+                            <div class = "price">12</div>
+                        </div>
+                        <div class = "row last">
+                            <h3>CRISPY DUCK SALAD</h3>
+                            <em>With pomelo, pine nuts and shallots</em>
+                            <div class = "price">14</div>
+                        </div>
+
+                        <h2>APPETIZERS</h2>
+                        <div class = "row">
+                            <h3>EDAMAME</h3>
+                            <em>Steamed soybean pods with kosher salt</em>
+                            <div class = "price">5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SPRING ROLLS</h3>
+                            <em>Crispy pork and shrimp rolls served with Chinese hot mustard and homemade duck sauce</em>
+                            <div class = "price">5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>BUDDHA ROLLS</h3>
+                            <em>Vegetarian spring rolls </em>
+                            <div class = "price">5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>CRISPY DUCK ROLLS</h3>
+                            <em>Crispy duck breast meat with vegetables </em>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>LETTUCE WRAP</h3>
+                            <em>(CHICKEN OR VEGETABLE) Diced white meat chicken and vegetables with brown sauce wrapped in lettuce</em>
+                            <div class = "price">9</div>
+                        </div>
+                        <div class = "row">
+                            <h3>STEAMED DUMPLINGS IN SPICY SWEET SAUCE</h3>
+                            <em>(PORK OR VEGGIE) </em>
+                            <div class = "price">6</div>
+                        </div>
+                        <div class = "row">
+                            <h3>PAN FRIED DUMPLINGS</h3>
+                            <em>(PORK) </em>
+                            <div class = "price">6</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SHRIMP TEMPURA</h3>
+                            <div class = "price">9</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SALT & PEPPER SQUID</h3>
+                            <div class = "price">9</div>
+                        </div>
+                        <div class = "row">
+                            <h3>FRIED SOFTSHELL CRAB WITH GARLIC & ALMONDS</h3>
+                            <div class = "price">14</div>
+                        </div>
+                        <div class = "row">
+                            <h3>HAMACHI KAMA YAKI</h3>
+                            <em>(Broiled yellowtail jaw)</em>
+                            <div class = "price">12</div>
+                        </div>
+                        <div class = "row last">
+                            <h3>CHICKEN OR BEEF SATAY</h3>
+                            <div class = "price">6</div>
+                        </div>
+
+                        <h2>SUSHI APPETIZERS</h2>
+                        <div class = "row">
+                            <h3>SUSHI SHOGUN STYLE</h3>
+                            <em>Tuna, salmon, yellowtail, fluke, shrimp</em>
+                            <div class = "price">12</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SASHIMI SHOGUN STYLE</h3>
+                            <em>Fresh scallop on the half shell with black bean sauce, salmon with green tea sauce, yellowtail with mint jalepeno gelee, blocks of tuna served with a nuda sauce</em>
+                            <div class = "price">19</div>
+                        </div>
+                        <div class = "row">
+                            <h3>HOT OIL CARPACCIO</h3>
+                            <em>Choice of: hirame (fluke), hamachi (yellowtail, or shiro maguri (white tuna)</em>
+                            <div class = "price">16</div>
+                        </div>
+                        <div class = "row">
+                            <h3>KOBE BEEF CARPACCIO</h3>
+                            <em>Thin slices of beef rubbed with garlic, seared with hot extra virgin olive oil and drizzled with soy vinigrette</em>
+                            <div class = "price">20</div>
+                        </div>
+                        <div class = "row">
+                            <h3>FRESH KUMAMOTO OYSTERS</h3>
+                            <div class = "price">3 each</div>
+                        </div>
+                        <div class = "row">
+                            <h3>JADE FLUKE</h3>
+                            <em>Slices of fluke sashimi, jalapenos, yuzu juice, aji amarillo, and grape seed oil finished with kaiware and a cilantro leaf</em>
+                            <div class = "price">14</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SUSHI SAMPLER</h3>
+                            <em>Assortment of daily chef selections</em>
+                            <div class = "price">15</div>
+                        </div>
+                        <div class = "row">
+                            <h3>OYSTER SHOOTER</h3>
+                            <em>Oysters, scallions, tobiko, cilantro, hot sauce, ponzu sauce in a shot glass with sake and tequila. Fresh tuna on a bed of guacamole with crispy wontons on the side</em>
+                            <div class = "price">12</div>
+                        </div>
+                        <div class = "row">
+                            <h3>POPPERS</h3>
+                            <em>Spicy tuna and spicy salmon on top of a sushi rice crisp, topped with an eel honey wasabi sauce and tobiko and scallions</em>
+                            <div class = "price">15</div>
+                        </div>
+                        <div class = "row">
+                            <h3>YELLOW TANGERINE</h3>
+                            <em>Thinly sliced yellowtail with tangerine, cilantro, jalapeno and finished with miso mustard sauce and scallion oil</em>
+                            <div class = "price">16</div>
+                        </div>
+                        <div class = "row">
+                            <h3>KONBU</h3>
+                            <em>Salmon sashimi on an avocado mash with slightly sweet konbu sauce on the side</em>
+                            <div class = "price">12</div>
+                        </div>
+                        <div class = "row last">
+                            <h3>THE CANAPE</h3>
+                            <em>Mini spicy tuna sandwiches with seared scallop on top and cucumber underneath </em>
+                            <div class = "price">16</div>
+                        </div>
+                    </div>
+
+                    <div class = "entrees menu">
+
+                        <h2>PASTA AND RICE</h2>
+                        <div class = "row">
+                            <h3>HONG KONG STYLE PAN FRIED NOODLE</h3>
+                            <em>(SHRIMP, BEEF, PORK OR CHICKEN)</em>
+                            <div class = "price">18</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SHREDDED DUCK WITH ANGELHAIR NOODLES</h3>
+                            <div class = "price">16</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SINGAPORE VERMICELLI NOODLE</h3>
+                            <em>WITH SHRIMP AND ROAST PORK</em>
+                            <div class = "price">14</div>
+                        </div>
+                        <div class = "row">
+                            <h3>BEEF CHOW FUN</h3>
+                            <em>(BROAD NOODLE)</em>
+                            <div class = "price">14</div>
+                        </div>
+                        <div class = "row">
+                            <h3>PAI TAI</h3>
+                            <em>(SHRIMP, ROAST PORK, CHICKEN OR VEGETABLE)</em>
+                            <div class = "price">12</div>
+                        </div>
+                        <div class = "row">
+                            <h3>LO MEIN</h3>
+                            <em>(SHRIMP, BEEF, ROAST PORK, CHICKEN OR VEGETABLE)</em>
+                            <div class = "price">10</div>
+                        </div>
+                        <div class = "row">
+                            <h3>JAPANESE UDON</h3>
+                            <em> (SHRIMP, BEEF, ROAST PORK, CHICKEN OR VEGETABLE)</em>
+                            <div class = "price">12</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SESAME LO MEIN </h3>
+                            <div class = "price">8</div>
+                        </div>
+                        <div class = "row">
+                            <h3>YOUNG CHOW FRIED RICE</h3>
+                            <div class = "price">14</div>
+                        </div>
+                        <div class = "row">
+                            <h3>FRIED RICE</h3>
+                            <em>(SHRIMP, BEEF, ROAST PORK, CHICKEN OR VEGETABLE) </em>
+                            <div class = "price">10</div>
+                        </div>
+                        <div class = "row last">
+                            <h3>SESAME FRIED RICE</h3>
+                            <div class = "price">8</div>
+                        </div>
+
+                        <h2>HOUSE SPECIALTIES</h2>
+                        <div class = "row">
+                            <h3>PEKING DUCK</h3>
+                            <em>Our famous classic Chinese duck accompanied by a trio of sauces, steamed buns</em>
+                            <div class = "price">48</div>
+                        </div>
+                        <div class = "row">
+                            <h3>LEGACY DUO</h3>
+                            <em>Filet mignon and scallops served in a brown butter sauce with seasoned vegetables</em>
+                            <div class = "price">30</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SURF & TURF</h3>
+                            <div class = "price">42</div>
+                        </div>
+                        <div class = "row">
+                            <h3>CHAMPAGNE FISH</h3>
+                            <em>Chilean seabass with champagne & honey sauce</em>
+                            <div class = "price">38</div>
+                        </div>
+                        <div class = "row">
+                            <h3>GRILLED LAMB CHOPS WITH THAI SAUCE</h3>
+                            <div class = "price">30</div>
+                        </div>
+                        <div class = "row">
+                            <h3>WHOLE MAIN LOBSTER WITH GINGER & SCALLION</h3>
+                            <div class = "price">SP</div>
+                        </div>
+                        <div class = "row last">
+                            <h3>SCALLOPS WITH RICE WINE SAUCE</h3>
+                            <div class = "price">28</div>
+                        </div>
+
+                        <h2>SEAFOOD</h2>
+                        <div class = "row">
+                            <h3>GUNG PO SHRIMP</h3>
+                            <em>Jumbo shrimp, served brown sauce and cashews</em>
+                            <div class = "price">27</div>
+                        </div>
+                        <div class = "row">
+                            <h3>VELVET SHRIMP</h3>
+                            <em>Jumbo shrimp and crab meat with egg-white sauce</em>
+                            <div class = "price">27</div>
+                            </div>
+                        <div class = "row">
+                            <h3>JUMBO SHRIMP WITH CURRY SAUCE</h3>
+                            <div class = "price">27</div>
+                        </div>
+                        <div class = "row">
+                            <h3>DRUNKEN PRAWN</h3>
+                            <div class = "price">27</div>
+                        </div>
+                        <div class = "row">
+                            <h3>PAN FRIED JUMBO PRAWN</h3>
+                            <div class = "price">27</div>
+                        </div>
+                        <div class = "row">
+                            <h3>FILLET OF FLOUNDER (FRIED OR SAUTEÉD)</h3>
+                            <div class = "price">38</div>
+                        </div>
+                        <div class = "row last">
+                            <h3>CRISPY WHOLE FISH</h3>
+                            <em>Lightly battered whole seabass dressed with scallions and chili sauce</em>
+                            <div class = "price">38</div>
+                        </div>
+
+                        <h2>POULTRY</h2>
+                        <div class = "row">
+                            <h3>BASIL CHICKEN</h3>
+                            <div class = "price">17</div>
+                        </div>
+                        <div class = "row">
+                            <h3>CHICKEN WITH CURRY SAUCE</h3>
+                            <div class = "price">17</div>
+                        </div>
+                        <div class = "row">
+                            <h3>CHICKEN WITH BROCCOLI & SHITAKE MUSHROOMS</h3>
+                            <div class = "price">17</div>
+                        </div>
+                        <div class = "row">
+                            <h3>CHICKEN WITH POMEGRANTE & PLUM SAUCE </h3>
+                            <div class = "price">17</div>
+                        </div>
+                        <div class = "row last">
+                            <h3>CHICKEN BLOSSOM</h3>
+                            <div class = "price">17</div>
+                        </div>
+
+                        <h2>BEEF & PORK</h2>
+                        <div class = "row">
+                            <h3>FILET MIGNON WITH CHINESE BROCCOLI</h3>
+                            <div class = "price">30</div>
+                        </div>
+                        <div class = "row">
+                            <h3>GRILLED NEW YORK STRIP, 10 OUNCE</h3>
+                            <div class = "price">25</div>
+                        </div>
+                        <div class = "row">
+                            <h3>GRILLED FILET MIGNON, 10 OUNCE</h3>
+                            <div class = "price">30</div>
+                        </div>
+                        <div class = "row">
+                            <h3>HOT & SPICY BEEF WITH SCALLION</h3>
+                            <div class = "price">22</div>
+                        </div>
+                        <div class = "row last">
+                            <h3>PORK TENDERLOIN WITH POMEGRANTE & PLUM SAUCE</h3>
+                            <div class = "price">22</div>
+                        </div>
+
+                        <h2>VEGETABLES</h2>
+                        <div class = "row">
+                            <h3>BABY CHINESE EGGPLANT WITH GARLIC SAUCE</h3>
+                            <div class = "price">10</div>
+                        </div>
+                        <div class = "row">
+                            <h3>BABY CHINESE EGGPLANT WITH TOFU</h3>
+                            <div class = "price">10</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SEASONAL CHINESE VEGETABLES</h3>
+                            <em>Bok Choy, Chinese Broccoli, Yu Choi</em>
+                            <div class = "price">10</div>
+                        </div>
+                        <div class = "row">
+                            <h3>DRIED SAUTEÉD  STRING BEANS</h3>
+                            <div class = "price">10</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SAUTEÉD  MIXED MUSHROOMS</h3>
+                            <div class = "price">12</div>
+                        </div>
+                        <div class = "row">
+                            <h3>PAN FRIED TOFU</h3>
+                            <div class = "price">10</div>
+                        </div>
+                        <div class = "row last">
+                            <h3>STEAMED TOFU</h3>
+                            <div class = "price">10</div>
+                        </div>
+                    </div>
+
+                    <div class = "sushi menu">
+
+                        <h2>SASHIMI OR NIGIRI</h2>
+
+                        <div class = "row">
+                            <h3>TUNA</h3>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SALMON</h3>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>YELLOWTAIL</h3>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>WHITE TUNA</h3>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SHRIMP</h3>
+                            <div class = "price">6</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SMOKED SALMON</h3>
+                            <div class = "price">7.5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SWEET SHRIMP</h3>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>EEL</h3>
+                            <div class = "price">7.5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SQUID</h3>
+                            <div class = "price">6</div>
+                        </div>
+                        <div class = "row">
+                            <h3>FLUKE</h3>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>MACKEREL</h3>
+                            <div class = "price">6</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SPANISH MACKEREL</h3>
+                            <div class = "price">6</div>
+                        </div>
+                        <div class = "row">
+                            <h3>CRAB STICK</h3>
+                            <div class = "price">6</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SALMON ROE</h3>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>TOBIKO</h3>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>TAMAGO</h3>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SCALLOP</h3>
+                            <div class = "price">8</div>
+                        </div>
+                        <div class = "row">
+                            <h3>INARI</h3>
+                            <div class = "price">4</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SURF CLAM</h3>
+                            <div class = "price">6</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SEA URCHIN ROW</h3>
+                            <div class = "price">SP</div>
+                        </div>
+                        <div class = "row">
+                            <h3>OO-TORO</h3>
+                            <div class = "price">SP</div>
+                        </div>
+                        <div class = "row last">
+                            <h3>OCTOPUS</h3>
+                            <div class = "price">7.5</div>
+                        </div>
+
+                        <h2>ROLL OR HANDROLL</h2>
+                        <div class = "row">
+                            <h3>CALIFORNIA ROLL</h3>
+                            <div class = "price">6</div>
+                        </div>
+                        <div class = "row">
+                            <h3>CUCUMBER ROLL</h3>
+                            <div class = "price">4</div>
+                        </div>
+                        <div class = "row">
+                            <h3>TUNA ROLL</h3>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>YELLOWTAIL ROLL</h3>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>EEL ROLL</h3>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SPICY TUNA ROLL</h3>
+                            <div class = "price">7.5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SPICY SALMON ROLL</h3>
+                            <div class = "price">7.5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SPICY YELLOWTAIL ROLL</h3>
+                            <div class = "price">7.5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>DYNAMITE ROLL</h3>
+                            <em>Crabstick, cucumber, avocado topped with spicy tuna</em>
+                            <div class = "price">12</div>
+                        </div>
+                        <div class = "row">
+                            <h3>PHILADELPHIA ROLL</h3>
+                            <em>Smoked salmon, cream cheese, scallions</em>
+                            <div class = "price">7.5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SALMON SKIN ROLL</h3>
+                            <div class = "price">6</div>
+                        </div>
+                        <div class = "row">
+                            <h3>GREEN GREEN ROLL</h3>
+                            <em>Lettuce, cucumber, avocado</em>
+                            <div class = "price">6</div>
+                        </div>
+                        <div class = "row">
+                            <h3>AVOCADO ROLL</h3>
+                            <div class = "price">5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>CRAB ROLL</h3>
+                            <div class = "price">5.5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SWEET POTATO ROLL</h3>
+                            <div class = "price">5.5</div>
+                        </div>
+                        <div class = "row">
+                            <h3>BOSTON ROLL</h3>
+                            <em>Shrimp, lettuce, avocado, mayo</em>
+                            <div class = "price">7</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SPIDER ROLL</h3>
+                            <em>Soft-shell crab tempura, cucumber, caviar, avocado, eel sauce</em>
+                            <div class = "price">12</div>
+                        </div>
+                        <div class = "row last">
+                            <h3>AMERICAN DREAM ROLL</h3>
+                            <em>Shrimp tempura, caviar, cucumber and avocado</em>
+                            <div class = "price">13</div>
+                        </div>
+
+                        <h2>SUSHI ENTREES</h2>
+                        <div class = "row">
+                            <h3>SASHIMI OR SUSHI</h3>
+                            <div class = "price">25/50/100</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SUSHI/SASHIMI COMBO</h3>
+                            <div class = "price">30/60/110</div>
+                        </div>
+                            <div class = "row last">
+                            <h3>TRIPLE SUSHI OR SASHIMI</h3>
+                            <div class = "price">28/30</div>
+                        </div>
+
+                        <h2>SPECIALTY ROLLS</h2>
+                        <div class = "row">
+                            <h3>WHITE HOT ROLL</h3>
+                            <em>Spicy snow crab, avocado, fluke tempura, eel sauce and jalapeno</em>
+                            <div class = "price">13</div>
+                        </div>
+                        <div class = "row">
+                            <h3>OUT OF CONTROL ROLL</h3>
+                            <em>Spicy salmon and cucumber, topped with tuna, yellowtail, salmon, spicy mayo and crunch</em>
+                            <div class = "price">13</div>
+                        </div>
+                        <div class = "row">
+                            <h3>PA-PA DRAGON ROLL</h3>
+                            <em>Eel, avocado and honey walnuts topped with avocado and sweet soy</em>
+                            <div class = "price">13</div>
+                        </div>
+                        <div class = "row">
+                            <h3>MA-MA DRAGON ROLL</h3>
+                            <em>Spicy tuna and seaweed salad topped with avocado and spicy lemon sauce</em>
+                            <div class = "price">13</div>
+                        </div>
+                        <div class = "row">
+                            <h3>BABY DRAGON ROLL</h3>
+                            <em>Shrimp tempura and lobster meat topped with avocado and eel sauce</em>
+                            <div class = "price">13</div>
+                        </div>
+                        <div class = "row">
+                            <h3>LEGENDS ROLL</h3>
+                            <em>Eel, salmon, avocado masago, and crab meat fried to a crisp</em>
+                            <div class = "price">13</div>
+                        </div>
+                        <div class = "row">
+                            <h3>FLAMING HEART</h3>
+                            <em>Salmon, tuna, crab stick, caviar, avocado and spicy tuna wrapped with soybean nori</em>
+                            <div class = "price">13</div>
+                        </div>
+                        <div class = "row">
+                            <h3>RAINBOW ROLL</h3>
+                            <em>Assorted fish in a collage of colors</em>
+                            <div class = "price">13</div>
+                        </div>
+                        <div class = "row">
+                            <h3>TWO THUMBS UP ROLL</h3>
+                            <em>Soft-shell crab, shrimp tempura, spicy lobster meat, caviar, avocado and cucumber wrapped in soybean nori</em>
+                            <div class = "price">14</div>
+                        </div>
+                        <div class = "row">
+                            <h3>SHOGUN SPECIAL ROLL</h3>
+                            <em>Soft-shell crab and cucumber topped with avocado and eel</em>
+                            <div class = "price">15</div>
+                        </div>
+                        <div class = "row">
+                            <h3>BANZAI ROLL</h3>
+                            <em>Shrimp tempura topped with salmon sashimi, spicy mayo and sweet soy</em>
+                            <div class = "price">13</div>
+                        </div>
+                        <div class = "row">
+                            <h3>RED LOBSTER ROLL</h3>
+                            <em>Spicy lobster meat and cucumber topped with tuna sashimi, spicy mayo  and crunch</em>
+                            <div class = "price">14</div>
+                        </div>
+                        <div class = "row last">
+                            <h3>VEGETARIAN ROLL</h3>
+                            <em>Cucumber, avocado, tofu and honey walnuts wrapped in soybean nori</em>
+                            <div class = "price">12</div>
+                        </div>
+                    </div>
+
+                    <div class = "dessert menu">
+
+                    <h2>COMING SOON!</h2>
+
+                    </div>
+
+                    <div class = "drinks menu">
+
+                    <h2>COMING SOON!</h2>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class = "clear"></div>
+
+
+        </div>
+
+
+        <script language="javascript" type="text/javascript">
+            $("#menu-nav ul li a").click(function(e){
+            e.preventDefault();
+
+            var thisUrl = $(this).attr("href");
+            $(".selected").removeClass("selected");
+            $("." + thisUrl).addClass("selected");
+            $(".highlighted").removeClass("highlighted");
+            $("#" + thisUrl).addClass("highlighted");
+            });
+
+             // initialize tooltip
+            $("#nav ul li a[title]").tooltip({
+
+            // tweak the position
+            offset: [30, 95],
+
+            // use the "slide" effect
+            effect: 'slide'
+
+            // add dynamic plugin with optional configuration for bottom edge
+        }).dynamic({ bottom: { direction: 'down', bounce: true } });
+
+        </script>
+
+    </body>
+</html>

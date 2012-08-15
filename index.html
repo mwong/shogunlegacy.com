@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Shogun Legacy</title>
+
+        <link href="_ui/css/styles.css" rel="stylesheet" type="text/css" />
+        <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+        <script src="http://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+        <script type="text/javascript" src="_ui/js/jquery.cycle.all.js"></script>
+        <script type="text/javascript" src="_ui/js/jquery.maximage.min.js"></script>
+
+        <script type="text/javascript">
+
+        $(function(){
+            $("#nav ul li a[title]").tooltip({
+
+                // tweak the position
+                offset: [30, 95],
+
+                // use the "slide" effect
+                effect: 'slide'
+
+            // add dynamic plugin with optional configuration for bottom edge
+            }).dynamic({ bottom: { direction: 'down', bounce: true } });
+
+            $('#slideshow').maximage({
+                cycleOptions: {
+                fx: 'fade',
+                // Speed has to match the speed for CSS transitions
+                speed: 3000,
+                cssTransitions: 3000
+                },
+            });
+
+        });
+
+        </script>
+
+    </head>
+
+    <body>
+        <div id="slideshow">
+            <img src="_ui/images/home/booth.jpg" class="bgM"/>
+            <img src="_ui/images/home/food02.jpg" class="bgM"/>
+            <img src="_ui/images/home/sushibar.jpg" class="bgM"/>
+            <img src="_ui/images/home/dining.jpg" class="bgM"/>
+            <img src="_ui/images/home/waterfall01.jpg" class="bgM"/>
+            <img src="_ui/images/home/front.jpg" class="bgM"/>
+            <img src="_ui/images/home/food07.jpg" class="bgM"/>
+            <img src="_ui/images/home/bar.jpg" class="bgM"/>
+            <img src="_ui/images/home/privateroom.jpg" class="bgM"/>
+            <img src="_ui/images/home/food09.jpg" class="bgM"/>
+            <img src="_ui/images/home/window01.jpg" class="bgM"/>
+            <img src="_ui/images/home/cocktail.jpg" class="bgM"/>
+            <img src="_ui/images/home/tank.jpg" class="bgM"/>
+        </div>
+
+        <div id = "nav">
+            <h1 class = "hide-text">
+                Shogun Legacy
+            </h1>
+            <ul>
+                <li><a href = "/about">About</a></li>
+                <li><a href = "/menu">Menu</a></li>
+                <li><a href = "#" title="Coming Soon!">Gallery</a></li>
+                <li><a href = "#" title="Coming Soon!">Private Room</a></li>
+                <li><a href = "#" title="Coming Soon!">Patio</a></li>
+                <li><a href = "/contact">Contact Us</a></li>
+            </ul>
+            <div id = "footer">
+                <p id = "address">
+                1536 North Bay Avenue<br />Toms River, NJ 08753<br />
+                732-286-9888<br /><br />
+                <a href = "mailto:info@shogunlegacy.com">info@shogunlegacy.com</a>
+                </p>
+            </div>
+        </div>
+
+    </body>
+</html>
